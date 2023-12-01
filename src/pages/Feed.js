@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Rota() {
+export default function Feed() {
   const navigation = useNavigation();
 
   const [newsData, setNewsData] = useState([
-    { id: '1', title: 'Avião 🛫'},
-    { id: '2', title: 'Caminhão 🚚'},
-    { id: '3', title: 'Van 🚐'},
-    { id: '4', title: 'Moto 🏍️'},
-    { id: '5', title: 'Ônibus 🚌'},
-    { id: '6', title: 'Trem🚆'},
+    { id: '1', title: 'Avião 🛫' },
+    { id: '2', title: 'Caminhão 🚚' },
+    { id: '3', title: 'Van 🚐' },
+    { id: '4', title: 'Moto 🏍️' },
+    { id: '5', title: 'Ônibus 🚌' },
+    { id: '6', title: 'Trem🚆' },
   ]);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -22,7 +22,7 @@ export default function Rota() {
 
   const handleAvancarPress = () => {
     if (selectedOption) {
-      navigation.navigate('Rota'); 
+      navigation.navigate('Way');
     }
   };
 
@@ -46,7 +46,6 @@ export default function Rota() {
         renderItem={renderNewsItem}
       />
 
-      {/* Botão "Avançar" habilitado apenas se uma opção estiver selecionada */}
       <Button
         title="Avançar"
         onPress={handleAvancarPress}
