@@ -1,20 +1,24 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import React from 'react';
-import Home from '../src/pages/Home.js';
-import Feed from '../src/pages/Feed.js';
-import Rota from '../src/pages/Rota.js'
+import { createStackNavigator } from '@react-navigation/stack';
+import Data from '../src/pages/Data';  
+import Home from '../src/pages/Home';  
+import Feed from '../src/pages/Feed';
+import Way from '../src/pages/Way';  
 
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
-export default function Routes() {
+const AppNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home}  options={{ headerShown: false }}/>
-      <Stack.Screen name="Feed" component={Feed}  options={{ headerShown: false }}/>
-      <Stack.Screen name="Rota" component={Rota}  options={{ headerShown: false }}/>
+  <Stack.Navigator initialRouteName="Data">
+  <Stack.Screen name="Data" component={Data} />
+  <Stack.Screen name="Home" component={Home} />
+  <Stack.Screen name="Feed" component={Feed} />
+  <Stack.Screen name="Way" component={Way} />
 
-    </Stack.Navigator>
+</Stack.Navigator>
+
   );
-}
+};
+
+export default AppNavigator;
 
