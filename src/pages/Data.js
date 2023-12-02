@@ -8,7 +8,7 @@ const Data = [
   {
     id: '1',
     title: 'Hoje (26/11/2023) - Amanhã (27/11/2023)',
-    origin: 'Shopping Campo Grande para Shopping Norte Sul - MS',
+    origin: 'Campo Grande para Sidrolândia - MS',
     clientName: 'Karina Oshiro',
     stars: '4,0',
     totalDelivery: '70',
@@ -19,7 +19,7 @@ const Data = [
   {
     id: '2',
     title: 'Hoje (26/11/2023) - Amanhã (27/11/2023)',
-    origin: 'Shopping Campo Grande para Shopping Norte Sul - MS',
+    origin: 'Campo Grande para Sidrolândia - MS',
     clientName: 'Karina Oshiro',
     stars: '4,0',
     totalDelivery: '70',
@@ -30,7 +30,7 @@ const Data = [
   {
     id: '3',
     title: 'Hoje (26/11/2023) - Amanhã (27/11/2023)',
-    origin: 'Shopping Campo Grande para Shopping Norte Sul - MS',
+    origin: 'Campo Grande para Sidrolândia - MS',
     clientName: 'Karina Oshiro',
     stars: '4,0',
     totalDelivery: '70',
@@ -41,7 +41,7 @@ const Data = [
   {
     id: '4',
     title: 'Hoje (26/11/2023) - Amanhã (27/11/2023)',
-    origin: 'Shopping Campo Grande para Shopping Norte Sul - MS',
+    origin: 'Campo Grande para Sidrolândia - MS',
     clientName: 'Karina Oshiro',
     stars: '4,0',
     totalDelivery: '70',
@@ -52,7 +52,7 @@ const Data = [
   {
     id: '5',
     title: 'Hoje (26/11/2023) - Amanhã (27/11/2023)',
-    origin: 'Shopping Campo Grande para Shopping Norte Sul - MS',
+    origin: 'Campo Grande para Sidrolândia - MS',
     clientName: 'Karina Oshiro',
     stars: '4,0',
     totalDelivery: '70',

@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Feed({ navigation }) {
+export default function Size({ navigation }) {
 
   const [newsData, setNewsData] = useState([
-    { id: '1', title: 'Avião 🛫' },
-    { id: '2', title: 'Caminhão 🚚' },
-    { id: '3', title: 'Van 🚐' },
-    { id: '4', title: 'Moto 🏍️' },
-    { id: '5', title: 'Ônibus 🚌' },
-    { id: '6', title: 'Trem🚆' },
+    { id: '1', title: 'Até 1 kg 📦' },
+    { id: '2', title: 'Até 5 kg 📦' },
+    { id: '3', title: 'Até 10 kg 📦' },
+    { id: '4', title: 'Até 20 kg📦' },
+    { id: '5', title: 'Outro 📦' },
+    
   ]);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -21,7 +21,7 @@ export default function Feed({ navigation }) {
 
   const handleAvancarPress = () => {
     if (selectedOption) {
-      navigation.navigate('Way');
+      navigation.navigate('Price');
     }
   };
 
@@ -38,6 +38,7 @@ export default function Feed({ navigation }) {
   );
 
   return (
+    
     <View style={styles.container}>
       <FlatList
         data={newsData}
